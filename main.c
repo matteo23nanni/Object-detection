@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "detection.h"
-#include "utils.h"
 #include "processing.h"
 
 // Signature can be saved statically in both BRIEF and SIFT formats.
