@@ -8,7 +8,7 @@ The project provides a **lightweight, non-AI-based** solution that is suitable f
 
 ## Project Structure
 
-´´´
+``` 
 ├── main
 │   └── main.c
 ├── libraries
@@ -19,7 +19,7 @@ The project provides a **lightweight, non-AI-based** solution that is suitable f
 │   ├── constants.c
 │   └── constants.h
 └── README.md                  This is the file you are currently reading
-´´´
+```
 
 
 ---
