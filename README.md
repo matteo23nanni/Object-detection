@@ -1,11 +1,14 @@
-# Object-detection
+# Object Detection
 
-The current project contains a series of libraries in pure C language used for object detection.
-The project was made and tested on low resources devices like ESP32 boards.
-It offers a light solution with no AI involved suitable for embedded systems.
+This project includes a set of libraries written in **pure C** for performing object detection.  
+It has been developed and tested on **resource-constrained devices** such as ESP32 boards.  
+The project provides a **lightweight, non-AI-based** solution that is suitable for embedded systems.
 
-Below is short explanation of remaining files in the project folder.
+---
 
+## Project Structure
+
+´´´
 ├── main
 │   └── main.c
 ├── libraries
@@ -16,20 +19,41 @@ Below is short explanation of remaining files in the project folder.
 │   ├── constants.c
 │   └── constants.h
 └── README.md                  This is the file you are currently reading
+´´´
 
-## libraries
 
-Contains all the functions that can be used for object detection.
-All global functions are declared in each file header.
+---
 
-**constants.h**
-Contains all the constants used in the detection process. The user can be freely change parameters such as thresholds.
-**processing.h**
-Contains all the function needed to preprocess an image before any detection process.
-**detection.h**
-Contains all the function that can be used to detect an object.
+## `libraries/`
 
-## main
+This folder contains all the core logic for the object detection system, broken down into modular files.  
+All global functions are declared in the corresponding `.h` files.
 
-The file `main.c` contains a high level example of a possible app that applies object detection.
+### `constants.h`
+Defines all constants used throughout the detection process.  
+You can freely modify parameters such as thresholds and configuration values to suit your use case.
+
+### `processing.h`
+Includes functions required to preprocess the input image before detection.  
+This may involve filtering, binarization, or other transformations.
+
+### `detection.h`
+Contains the actual object detection algorithms.  
+These are lightweight and tailored for environments with limited computational resources.
+
+--- 
+
+## `main/`
+
+### `main.c`
+The file `main.c` demonstrates a high-level use case of how to integrate and apply the object detection libraries in a practical application.
+
+---
+
+## Notes
+
+- The code is written with **portability and low overhead** in mind.
+- Designed for **real-time processing** without reliance on external libraries or machine learning frameworks.
+- Suitable for **microcontroller applications** where memory and CPU are limited.
+
 
