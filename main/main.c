@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include "detection.h"
-#include "utils.h"
-#include "processing.h"
+#include "../detection.h"
+#include "../processing.h"
 
 // Signature can be saved statically in both BRIEF and SIFT formats.
 // The maximum number of signatures is defined by MAX_SIGNATURES.
