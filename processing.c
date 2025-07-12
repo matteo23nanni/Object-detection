@@ -62,8 +62,6 @@ int is_edge_response(uint8_t ** img, int y, int x) {
     long long trace = sumXX + sumYY;
     long long ratio = det - (((trace * trace)<<2)/100);
 
-    //printf("det: %d, trace: %d, ratio: %d\n", det, trace, ratio);
-
     return ratio > 0 && (ratio>>10) > HARRIS_THRESHOLD_SIFT;
 }
 
@@ -101,9 +99,6 @@ void non_max_suppression_signature(uint8_t ** img, uint8_t ** interest) {
                             }
                         }
                         interest[i][j] = BINARY_ONE;
-                        // points[interest_points_found].y = i<<1;
-                        // points[interest_points_found].x = j<<1;
-                        // interest_points_found++;
 
                     } else {
                         interest[i][j] = BINARY_ZERO;
