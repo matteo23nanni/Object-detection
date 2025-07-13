@@ -35,7 +35,6 @@ You can freely modify parameters such as thresholds and configuration values to 
 
 ### `processing.h`
 Includes functions required to preprocess the input image before detection.  
-This may involve filtering, binarization, or other transformations.
 
 ### `detection.h`
 Contains the actual object detection algorithms.  
