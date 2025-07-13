@@ -17,7 +17,13 @@ The project provides a **lightweight, non-AI-based** solution that is suitable f
 │   ├── processing.c
 │   ├── processing.h
 │   ├── constants.c
-│   └── constants.h
+├── signatures
+│   ├── signatureBRIEF2.c
+│   ├── signatureBRIEF3.c
+│   ├── signatureBRIEFHarris.c
+│   ├── signatureSIFT2.c
+│   ├── signatureSIFT3.c
+│   └── signatureSIFTHarris.c
 └── README.md                  This is the file you are currently reading
 ```
 
@@ -46,6 +52,13 @@ These are lightweight and tailored for environments with limited computational r
 
 ### `main.c`
 The file `main.c` demonstrates a high-level use case of how to integrate and apply the object detection libraries in a practical application.
+
+---
+
+## `signatures/`
+
+This folder contains a small dataset of signatures extracted from a car image. 
+Each file contains signatures extracted with a different pipeline and in different formats.
 
 ---
 
